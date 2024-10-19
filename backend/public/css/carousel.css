@@ -1,0 +1,82 @@
+/* Estilos para a lista de carrosséis */
+
+.carousel-section {
+    margin-bottom: 30px;
+}
+
+/* Estilos para os titulos das categorias */
+.carousel-section h2 {
+    margin: 10px 0;
+    font-size: 18px;
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: left;
+    color: #d52929;
+}
+
+/* Estilos para o carrossel horizontal */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /* Força o snap ao scrollar */
+    -webkit-overflow-scrolling: touch;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none; /* Oculta a barra de rolagem */
+}
+
+/* Estilos para o card */
+.carousel .live {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 10px;
+    margin-right: 15px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+/* Estilos para os links dentro dos cards */
+.carousel .live a {
+    text-decoration: none;  /* Remove o sublinhado do link */
+    color: inherit;         /* Mantém a cor do texto */
+    display: block;         /* Faz o link ocupar toda a área do card */
+}
+
+.carousel .live a:hover {
+    text-decoration: none;  /* Garante que o sublinhado não apareça ao passar o mouse */
+}
+
+.carousel .live img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilos para o conteúdo da live */
+.carousel .live .live-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    width: 100%;
+}
+
+.carousel .live .live-info h3 {
+    margin: 5px 0 0;
+    font-size: 14px;
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: left;
+    color: #333;
+}
+
+.carousel .live .live-info p {
+    margin: 5px 0 0;
+    font-size: 12px;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #777;
+}
