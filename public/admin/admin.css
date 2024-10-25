@@ -1,0 +1,63 @@
+body {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+#categories {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.category-container {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.category-input,
+.category-textarea {
+  width: 100%;
+  margin-top: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.category-item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+button {
+  margin-top: 10px;
+}
+
+#add-category {
+  margin-top: 0px;
+}
+
+#youtube-video-info {
+  margin-bottom: 50px;
+}
