@@ -1,0 +1,19 @@
+/* Estilos gerais */
+
+body {
+    background-color: #f5f5f5;
+    /* margin: 20px; */
+    padding: 0;
+}
+
+h1 {
+    text-align: center;               /* Centraliza o texto */
+    font-size: 50px;                  /* Tamanho grande da fonte */
+    font-weight: 700;                 /* Peso grosso para deixar mais impactante */
+    font-family: 'Montserrat', sans-serif; /* Fonte ousada e popular */
+    color: #333;                      /* Cor escura para contraste */
+    margin-top: 150px;
+    margin-bottom: 80px;                 /* Espaçamento superior */
+    line-height: 1.2;                 /* Espaçamento entre linhas */
+    letter-spacing: 1px;              /* Um pequeno espaçamento entre letras para melhor legibilidade */
+}

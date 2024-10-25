@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Admin Dashboard</h1>
+
+        <!-- O formulário de busca de vídeo do YouTube será inserido aqui pelo JavaScript -->
+
+        <section id="add-category" class="mb-5">
+            <h3>Adicionar Nova Categoria</h3>
+            <input type="text" id="new-category-title" class="form-control mb-3" placeholder="Título da Categoria" />
+            <div id="new-category-lives" class="mb-3">
+                <h3>Lives</h3>
+                <div class="live-item mb-2">
+                    
+                </div>
+            </div>
+            <button id="add-live" class="btn btn-secondary mb-2">Adicionar Live</button>
+            <button id="create-category" class="btn btn-primary mb-2">Criar Categoria</button>
+        </section>
+
+        <section id="categories">
+            <!-- Aqui vai a lista de categorias para editar -->
+        </section>
+    </div>
+
+    <!-- Bootstrap JS e Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/admin/admin.js"></script>
+</body>
+</html>
