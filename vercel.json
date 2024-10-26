@@ -1,12 +1,8 @@
 {
-  "rewrites": [
-    { "source": "/api/admin", "destination": "/api/admin" },
-    { "source": "/api/login", "destination": "/api/login" },
-    { "source": "/api/csrf-token", "destination": "/api/csrf-token" },
-    { "source": "/api/categories/names", "destination": "/api/categories/names" },
-    { "source": "/api/categories/:id", "destination": "/api/categories/:id" },
-    { "source": "/api/youtube-video/:videoId", "destination": "/api/youtube-video/:videoId" },
-    { "source": "/api/categories/:id/add-video", "destination": "/api/categories/:id/add-video" },
-    { "source": "/api/categories", "destination": "/api/categories" }
+  "builds": [
+    { "src": "kerygma-backend.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "kerygma-backend.js" }
   ]
 }
