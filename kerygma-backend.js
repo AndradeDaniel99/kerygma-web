@@ -69,7 +69,7 @@ app.use(express.json());
 app.post("/api/login", loginLimiter, loginUser); // Usa a função loginUser do viewmodel
 
 // Protege a rota de admin
-app.get("api/admin", checkAuth, (req, res) => {
+app.get("/admin", checkAuth, (req, res) => {
   res.sendFile(path.join(__dirname, "public", "admin", "admin.html"));
 });
 
@@ -79,7 +79,7 @@ app.get("/api/csrf-token", (req, res) => {
 });
 
 // Rota para a página de login
-app.get("api/login", (req, res) => {
+app.get("/login", (req, res) => {
   res.sendFile(path.join(__dirname, "public/admin/login.html"));
 });
 
