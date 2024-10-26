@@ -1,23 +1,12 @@
 {
-    "rewrites": [
-      { "source": "/admin", "destination": "/api/admin" },
-      { "source": "/login", "destination": "/api/login" },
-      { "source": "/api/csrf-token", "destination": "/api/csrf-token" },
-      { "source": "/api/categories/names", "destination": "/api/categories/names" },
-      { "source": "/api/categories/:id", "destination": "/api/categories/:id" },
-      { "source": "/api/youtube-video/:videoId", "destination": "/api/youtube-video/:videoId" },
-      { "source": "/api/categories/:id/add-video", "destination": "/api/categories/:id/add-video" },
-      { "source": "/api/categories", "destination": "/api/categories" }
-    ],
-    "routes": [
-      { "src": "/api/admin", "dest": "/api/admin" },
-      { "src": "/api/login", "dest": "/api/login" },
-      { "src": "/api/csrf-token", "dest": "/api/csrf-token" },
-      { "src": "/api/categories/names", "dest": "/api/categories/names" },
-      { "src": "/api/categories/:id", "dest": "/api/categories/:id" },
-      { "src": "/api/youtube-video/:videoId", "dest": "/api/youtube-video/:videoId" },
-      { "src": "/api/categories/:id/add-video", "dest": "/api/categories/:id/add-video" },
-      { "src": "/api/categories", "dest": "/api/categories" }
-    ]
-  }
-  
+  "rewrites": [
+    { "source": "/api/admin", "destination": "/api/admin" },
+    { "source": "/api/login", "destination": "/api/login" },
+    { "source": "/api/csrf-token", "destination": "/api/csrf-token" },
+    { "source": "/api/categories/names", "destination": "/api/categories/names" },
+    { "source": "/api/categories/:id", "destination": "/api/categories/:id" },
+    { "source": "/api/youtube-video/:videoId", "destination": "/api/youtube-video/:videoId" },
+    { "source": "/api/categories/:id/add-video", "destination": "/api/categories/:id/add-video" },
+    { "source": "/api/categories", "destination": "/api/categories" }
+  ]
+}
