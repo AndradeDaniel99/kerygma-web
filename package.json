@@ -4,8 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "echo 'Nenhuma etapa de build necessária'",
-    "start": "vercel dev"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
