@@ -1,10 +1,11 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "kerygma-backend.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node kerygma-backend.js"
+    "build": "echo 'Nenhuma etapa de build necessária'",
+    "start": "vercel dev"
   },
   "keywords": [],
   "author": "",
