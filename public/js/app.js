@@ -21,11 +21,36 @@ function formatCategories(categories) {
   });
 }
 
+// Função para ordenar as categorias de acordo com um array de índices
+function orderCategoriesBySequence(categories, order) {
+  // Cria um novo array ordenado com base nos índices fornecidos em `order`
+  const orderedCategories = order.map(index => categories[index]).filter(Boolean);
+
+  // Adiciona ao final do array os elementos de `categories` que não foram incluídos em `order`
+  categories.forEach((category, index) => {
+    if (!order.includes(index)) {
+      orderedCategories.push(category);
+    }
+  });
+
+  console.log(categories, order, orderedCategories);
+  return orderedCategories;
+}
+
 // Carrega as categorias e renderiza o carrossel
 async function loadAndRenderCategories() {
+  const sequence = [
+    0, // recomendados
+    1, //deus nao esqueceu de voce
+    3, //venca a pornografia
+    4, //ta dificil ser jovem?
+    5, //confira edits inspiradores
+    2 //podcasts e testemunhos
+  ];
   const categories = await fetchCategories();
   const formattedCategories = formatCategories(categories);
-  renderCategoryCarousels(formattedCategories);
+  const orderedCategories = orderCategoriesBySequence(formattedCategories, sequence);
+  renderCategoryCarousels(orderedCategories);
 }
 
 // Função para carregar o arquivo JSON de acordo com o idioma do usuário
